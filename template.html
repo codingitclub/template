@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enter Your Title Here</title>
+</head>
+<body>
+	<canvas id="canvas" style="position:fixed; top:0px; left:0px;"></canvas>
+	<script type="text/javascript">
+		var canvas = document.getElementById("canvas");
+		var width = window.innerWidth;
+		var height = window.innerHeight;
+		canvas.width = width;
+		canvas.height = height;
+		var ctx = canvas.getContext("2d");
+
+		function draw(){
+			// This function will get called 30 times a second
+		}
+		window.setInterval(draw,1000/30);
+	</script>
+</body>
+</html>
